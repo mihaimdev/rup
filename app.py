@@ -22,11 +22,11 @@ gb.configure_selection(selection_mode="multiple", use_checkbox=True)
 gb.configure_side_bar()  # side_bar is clearly a typo :) should by sidebar
 gridOptions = gb.build()
 
-st.success(
-    f"""
-        💡 Tip! Hold the shift key when selecting rows to select multiple rows at once!
-        """
-)
+# st.success(
+#     f"""
+#         💡 Tip! Hold the shift key when selecting rows to select multiple rows at once!
+#         """
+# )
 with st.spinner('Lista se incarca...'):
     response = AgGrid(
         shows,
