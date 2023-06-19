@@ -4,7 +4,7 @@ from st_aggrid import AgGrid
 from st_aggrid.grid_options_builder import GridOptionsBuilder
 from st_aggrid.shared import JsCode
 
-st.set_page_config(page_icon="✂️", page_title="CSV Wrangler",
+st.set_page_config(page_icon="✂️", page_title="RUP",
                    initial_sidebar_state="collapsed",
                    layout="wide")
 st.sidebar.title("COPSI RUP")
