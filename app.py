@@ -4,12 +4,21 @@ from st_aggrid import AgGrid
 from st_aggrid.grid_options_builder import GridOptionsBuilder
 from st_aggrid.shared import JsCode
 
+@st.cache_data
+def load_data(url):
+    df = pd.read_csv(url)  # 👈 Download the data
+    return df
+
+df = load_data("rup1.csv")
+#st.dataframe(df)
+
+st.button("Rerun")
 st.set_page_config(page_icon="✂️", page_title="CSV Wrangler",
                    initial_sidebar_state="collapsed",
                    layout="wide")
 st.sidebar.title("COPSI RUP")
 
-filtered_df = df = pd.read_csv("rup1.csv",dtype=str).fillna("")
+#filtered_df = df = pd.read_csv("rup1.csv",dtype=str).fillna("")
 st.title("Registrul Unic al Psihologilor")
 shows = df
 
