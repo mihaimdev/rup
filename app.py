@@ -16,7 +16,7 @@ def load_data(url):
 df = load_data("rup1.csv")
 #st.dataframe(df)
 
-st.button("Rerun")
+#st.button("Rerun")
 #filtered_df = df = pd.read_csv("rup1.csv",dtype=str).fillna("")
 st.title("Registrul Unic al Psihologilor")
 shows = df
@@ -35,7 +35,7 @@ gridOptions = gb.build()
 #         💡 Tip! Hold the shift key when selecting rows to select multiple rows at once!
 #         """
 # )
-with st.spinner('Lista se incarca...'):
+with st.spinner("Lista se încarcaă...Acum, la început, durează cîteva secunde. Apoi vei avea toate informațiile despre toți psihologii acreditați. Poți filtra informațiile din meniul din dreapta "):
     response = AgGrid(
         shows,
         gridOptions=gridOptions,
