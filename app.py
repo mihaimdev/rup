@@ -35,7 +35,7 @@ gridOptions = gb.build()
 #         💡 Tip! Hold the shift key when selecting rows to select multiple rows at once!
 #         """
 # )
-with st.spinner("Lista se încarcă...Acum, la început, durează cîteva secunde. Apoi vei avea toate informațiile despre toți psihologii acreditați. Poți filtra informațiile din meniul din dreapta "):
+with st.spinner("Lista se încarcă...mai greu la încrput :) "):
     response = AgGrid(
         shows,
         gridOptions=gridOptions,
