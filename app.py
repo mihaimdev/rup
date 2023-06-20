@@ -35,7 +35,7 @@ gridOptions = gb.build()
 #         💡 Tip! Hold the shift key when selecting rows to select multiple rows at once!
 #         """
 # )
-with st.spinner("Lista se încarcă...mai greu la încrput :) "):
+with st.spinner("Lista se încarcă...mai greu la început :) "):
     response = AgGrid(
         shows,
         gridOptions=gridOptions,
